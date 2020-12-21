@@ -17,3 +17,7 @@ is frame for building RESTFULL API with Nodejs and express framework
 ```sh
 $ git clone https://github.com/cangkir13/NodeFrame.git
 ``` 
+
+```sh
+npm install
+```
