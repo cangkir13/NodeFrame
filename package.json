@@ -4,7 +4,8 @@
   "description": "frame untuk membuat microservice restfull",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "dev": "nodemon index.js",
+    "start": "NODE_ENV=prod nodemon index.js",
     "db:makemigrations": "./node_modules/sequelize-auto-migrations/bin/makemigration.js"
   },
   "keywords": [

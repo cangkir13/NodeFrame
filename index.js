@@ -9,7 +9,7 @@ const route = require('./app/route')
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
 
-
+// console.log(process.env.NODE_ENV)
 // const router = express.Router()
 // console.log(router)
 
