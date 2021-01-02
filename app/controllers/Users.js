@@ -1,4 +1,7 @@
 const axios = require('axios')
+const User = require('../models/Users')
+// const Sequelize = require('../models')
+// const Sequelize = require('sequelize')
 
 class Users {
 
@@ -29,6 +32,14 @@ class Users {
             msg:"ini dengan router terpisah degan defult",
             usersnews
         })
+    }
+
+    static async getdatauser(req, res){
+        // console.log(User) 
+        
+        const data = await User.findAll()
+        console.log(data)
+        return res.json('data')
     }
 }
 

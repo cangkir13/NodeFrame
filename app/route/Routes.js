@@ -16,8 +16,6 @@ const controllers = require('../controllers/index')
 const middlewares = require('../middlareware/validation/index')
 const schema = require('../middlareware/Schemas/index')
 
-
-
 const Routes = [
     {
         method:"get",
@@ -68,37 +66,5 @@ const Routes = [
         controller:controllers.Users.show,
     },
 ]
-
-// const Routes = [
-//     {
-//         method:"get",
-//         path:'/',
-//         middleware:null,
-//         controller:controllers.Home,
-//         desc:'Halaman utama',
-//     },
-//     {
-//         method:"get",
-//         path:'/kali/:num1/:num2',
-//         middleware:[schema.kurang],
-//         controller:controllers["Home-multiple"],
-//         desc:'Halaman utama home penjumlahan',
-//     },
-//     {
-//         method:"get",
-//         path:"/user/arrows",
-//         middleware:null,
-//         controller:controllers.Arrow,
-//         desc:'controller by arrow function'
-//     },
-
-//     {
-//         method:"get",
-//         path:"/user/:id",
-//         middleware:[middlewares.Params(schema.Users.user), schema.Foo],
-//         controller:controllers.Userid,
-//     },
-
-// ]
 
 module.exports = Routes
