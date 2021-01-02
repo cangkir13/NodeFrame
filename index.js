@@ -9,9 +9,7 @@ const bodyParser = require('body-parser')
 require('dotenv').config()
 // config
 const config = require('./system/config/index')
-// console.log(config)
-// console.log(process.env)
-const DB = config.database
+
 
 // parsing request body
 app.use(bodyParser.urlencoded({extended:true}))
@@ -22,7 +20,7 @@ app.use('/api', routers)
 
 
 app.listen(config.listen, () => {
-    // console.log(config.listen)
-    return DB
+    console.log(config.listen)
+    // return DB
 })
 
