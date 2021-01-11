@@ -10,7 +10,6 @@ require('dotenv').config()
 // config
 const config = require('./system/config/index')
 
-
 // parsing request body
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())

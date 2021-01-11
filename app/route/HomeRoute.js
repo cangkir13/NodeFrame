@@ -7,7 +7,7 @@
 
 // controller or you can call all controller with index access
 // and this example with singgle controller (HOME.js controllers)
-const controllers = require('../controllers/Home') 
+const Homecnt = require('../controllers/Home') 
 // schema input for middleware
 const SchemaHome = require('../middlareware/Schemas/index')
 // validation schema input
@@ -20,19 +20,19 @@ const HomeRoute = [
         method:'get',
         path:'/home',
         middleware:null,
-        controller:controllers.index
+        controller:Homecnt.index
     },
     {
         method:'post',
         path:'/home/sum/:num1/:num2',
         middleware:[ValidateSchema(SchemaHome.Home_val_sum.HomeSum, 'params')],
-        controller:controllers.sum
+        controller:Homecnt.sum
     },
     {
         method:'post',
         path:'/home/body',
         middleware:[ValidateSchema(SchemaHome.Home_val_sum.HomeSum, 'body')],
-        controller:controllers.showBody
+        controller:Homecnt.showBody
     },
     {
         method:'post',
@@ -41,7 +41,7 @@ const HomeRoute = [
             ValidateSchema(SchemaHome.Home_val_sum.HomeSum, 'body'),
             CustomValidate
         ],
-        controller:controllers.showBody
+        controller:Homecnt.showBody
     },
 ]
 
