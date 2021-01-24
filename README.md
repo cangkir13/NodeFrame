@@ -12,8 +12,10 @@ is frame for building RESTFULL API with Nodejs and express framework
 
 ```sh
 $ git clone https://github.com/cangkir13/NodeFrame.git
-``` 
-
-```sh
 npm install
+npm start
 ```
+
+#### Starting url
+get localhost:8700/api/firebase (for getting data)
+post localhost:8700/api/firebase/store (create data)
