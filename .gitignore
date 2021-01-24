@@ -1,5 +1,8 @@
 .env
 
 node_modules/
+
 app/firebase/config.js
-app/config/config.js
+
+app/config/config.json
+app/contr
