@@ -2,3 +2,5 @@
 
 node_modules/
 app/firebase/config.js
+.env
+app/config/config.js
