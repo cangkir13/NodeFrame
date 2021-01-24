@@ -17,5 +17,5 @@ npm start
 ```
 
 #### Starting url
-get localhost:8700/api/firebase (for getting data)
-post localhost:8700/api/firebase/store (create data)
+- get localhost:8700/api/firebase (for getting data)
+- post localhost:8700/api/firebase/store (create data)
