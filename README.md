@@ -7,14 +7,12 @@ is frame for building RESTFULL API with Nodejs and express framework
 - Promise-based ORM : [Sequalize](https://www.npmjs.com/package/sequelize).
 - Data validator : [https://www.npmjs.com/package/joi.
 - Utility [nodemon](https://www.npmjs.com/package/nodemon)
-- firebase database
 
 #### Cloning & Install
 
 ```sh
 $ git clone https://github.com/cangkir13/NodeFrame.git
-``` 
-
-```sh
 npm install
 ```
+#### Starting url example
+- get localhost:8700/api/home
